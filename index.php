@@ -110,6 +110,7 @@ $count  = mysqli_num_rows($query);
     
     $( "#generate_segitiga" ).on( "click", function() {
         var angka = $('#input_angka').val();
+        var text  = document.getElementById('hasil');
 
         if(angka < 1){
             return alert("INPUT ANGKA YANG BENAR!");
