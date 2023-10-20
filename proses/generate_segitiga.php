@@ -10,7 +10,7 @@ $panjang = strlen((string)$angka);
 for($i = 1; $i <= $panjang; $i++){
     for($j = 0; $j < $i; $j++){
         if($j + 1 == 1){
-            $temp = $temp . $i . '0';
+            $temp = $temp . substr($angka, $i-1, 1) . '0';
         }else{
             $temp = $temp . '0';
         }
