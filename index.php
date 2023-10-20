@@ -93,6 +93,7 @@ $count  = mysqli_num_rows($query);
                         <div class="box-body">
                             <div class="row">
                                 <div class="col" id="hasil">
+                                    <textarea name="area" id="area" cols="15" rows="10"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +111,7 @@ $count  = mysqli_num_rows($query);
     
     $( "#generate_segitiga" ).on( "click", function() {
         var angka = $('#input_angka').val();
-        var text  = document.getElementById('hasil');
+        var text  = document.getElementById('area');
 
         if(angka < 1){
             return alert("INPUT ANGKA YANG BENAR!");
